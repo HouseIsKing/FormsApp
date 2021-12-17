@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ElectionSystem2._0
+namespace ElectionSystem2._0.Views
 {
-    public partial class Form1 : Form
+    public partial class ElectionCommitteeView : Form
     {
-        public Form1()
+        public ElectionCommitteeView()
         {
             InitializeComponent();
         }

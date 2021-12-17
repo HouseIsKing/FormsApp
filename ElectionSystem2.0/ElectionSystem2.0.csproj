@@ -46,18 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ballot.cs" />
-    <Compile Include="Candidate.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Models\Ballot.cs" />
+    <Compile Include="Views\BallotCommitteeView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Views\BallotCommitteeView.Designer.cs" />
+    <Compile Include="Models\Candidate.cs" />
+    <Compile Include="Views\ElectionCommitteeView.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Party.cs" />
+    <Compile Include="Views\ElectionCommitteeView.Designer.cs" />
+    <Compile Include="Views\LoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginView.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Voter.cs" />
+    <Compile Include="Models\Party.cs" />
+    <Compile Include="Views\UsherView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UsherView.Designer.cs" />
+    <Compile Include="Models\Voter.cs" />
+    <Compile Include="Views\VoterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\VoterView.Designer.cs" />
+    <EmbeddedResource Include="Views\LoginView.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -67,6 +82,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\VoterView.resx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\User.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
